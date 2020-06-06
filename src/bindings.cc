@@ -174,11 +174,11 @@ void SimulateFromXml(const Nan::FunctionCallbackInfo<Value>& args) {
     baton = new WorkerThreadBaton();
     baton->request.data = baton;
     baton->event_callbacks = &event_callbacks;
-    baton->options = new string(*Nan::Utf8String(v8::Value::ToString(v8::Value::args[0])));
+    baton->options = new string(*Nan::Utf8String(v8::Value::ToString(v8::Local<v8::Context>::Cast(args[0]))));
     baton->files = new map<string, string>();
 
-    Local<Object> files = v8::Value::ToObject(v8::Value::args[1]);
-    Local<Array> props = GetPropertyNames(files.ToLocalChecked());
+    Local<Object> files = v8::Value::ToObject(v8::Local<v8::Context>::Cast(args[1]));
+    Local<Array> props = GetPropertyNames(files);
     for(int i = 0; i < props->Length(); i++) {
         if (props->Get(i)->IsString()) {
             Local<String> key = v8::Value::ToString(props->Get(i));
@@ -218,7 +218,7 @@ void RegisterEvent(const Nan::FunctionCallbackInfo<Value>& args) {
         return;
     }
 
-    string eventName = *Nan::Utf8String(v8::Value::ToString(v8::Value::args[0]));
+    string eventName = *Nan::Utf8String(v8::Value::ToString(v8::Local<v8::Context>::Cast(args[0]));
 
     if (event_callbacks.find(eventName) != event_callbacks.end()) {
         event_callbacks[eventName].Reset();
