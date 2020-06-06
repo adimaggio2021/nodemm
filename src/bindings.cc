@@ -33,6 +33,7 @@
 using namespace v8;
 using namespace node;
 using namespace std;
+using namespace Nan;
 
 /**
  * The simulation thread baton. This will be used to send data to the thread that simulation will occur.
@@ -296,22 +297,22 @@ void initOpenMM(Local<Object> exports,
               void* priv) {
     Nan::Set(exports,
         Nan::New<String>("simulateFromXml").ToLocalChecked(),
-        Nan::New<FunctionTemplate>(SimulateFromXml)->GetFunction());
+        Nan::GetFunction(Nan::New<FunctionTemplate>(SimulateFromXml));
     Nan::Set(exports,
         Nan::New<String>("on").ToLocalChecked(),
-        Nan::New<FunctionTemplate>(RegisterEvent)->GetFunction());
+        Nan::GetFunction(Nan::New<FunctionTemplate>(RegisterEvent));
     Nan::Set(exports,
         Nan::New<String>("continue").ToLocalChecked(),
-        Nan::New<FunctionTemplate>(Continue)->GetFunction());
+        Nan::GetFunction(Nan::New<FunctionTemplate>(Continue));
     Nan::Set(exports,
         Nan::New<String>("pause").ToLocalChecked(),
-        Nan::New<FunctionTemplate>(Pause)->GetFunction());
+        Nan::GetFunction(Nan::New<FunctionTemplate>(Pause));
     Nan::Set(exports,
         Nan::New<String>("stop").ToLocalChecked(),
-        Nan::New<FunctionTemplate>(Stop)->GetFunction());
+        Nan::GetFunction(Nan::New<FunctionTemplate>(Stop));
     Nan::Set(exports,
         Nan::New<String>("getVersionName").ToLocalChecked(),
-        Nan::New<FunctionTemplate>(GetVersionName)->GetFunction());
+        Nan::GetFunction(Nan::New<FunctionTemplate>(GetVersionName));
 }
 
 #define NODE_MODULE_CONTEXT_AWARE_BUILTIN(openmm_native, initOpenMM)
