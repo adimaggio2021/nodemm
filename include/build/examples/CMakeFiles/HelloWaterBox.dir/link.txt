@@ -1,0 +1,1 @@
+/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-g++  -march=armv8-a -funsafe-math-optimizations -O3 -DNDEBUG  -rdynamic CMakeFiles/HelloWaterBox.dir/HelloWaterBox.cpp.o  -o ../HelloWaterBox  -Wl,-rpath,/Users/adimaggio2021/Downloads/test222/openmm-master/build ../libOpenMM.so -lcpufeatures 

@@ -1,0 +1,342 @@
+The target system is: Linux -  - 
+The host system is: Darwin - 18.5.0 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is Clang, found in "/Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/3.17.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is Clang, found in "/Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/3.17.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4ce7c/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4ce7c.dir/build.make CMakeFiles/cmTC_4ce7c.dir/build
+Building C object CMakeFiles/cmTC_4ce7c.dir/testCCompiler.c.o
+/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-gcc    -o CMakeFiles/cmTC_4ce7c.dir/testCCompiler.c.o   -c /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_4ce7c
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4ce7c.dir/link.txt --verbose=1
+/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-gcc      -rdynamic CMakeFiles/cmTC_4ce7c.dir/testCCompiler.c.o  -o cmTC_4ce7c 
+
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_72a50/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_72a50.dir/build.make CMakeFiles/cmTC_72a50.dir/build
+Building C object CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o
+/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-gcc   -v -o CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o   -c /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCCompilerABI.c
+Android (6317467 based on r365631c1) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project e0caee08e5f09b374a27a676d04978c81fcb1928) (based on LLVM 9.0.8svn)
+Target: aarch64-unknown-linux-android21
+Thread model: posix
+InstalledDir: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin
+Found candidate GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/clang90" -cc1 -triple aarch64-unknown-linux-android21 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debugger-tuning=gdb -target-linker-version 409.12 -v -coverage-notes-file /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.gcno -resource-dir /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8 -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/include -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include -fdebug-compilation-dir /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fdiagnostics-show-option -o CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCCompilerABI.c
+clang -cc1 version 9.0.8 based upon LLVM 9.0.8svn default target x86_64-apple-darwin18.5.0
+ignoring nonexistent directory "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include
+ /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include
+ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android
+ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include
+End of search list.
+Linking C executable cmTC_72a50
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72a50.dir/link.txt --verbose=1
+/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-gcc     -v -rdynamic CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o  -o cmTC_72a50 
+Android (6317467 based on r365631c1) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project e0caee08e5f09b374a27a676d04978c81fcb1928) (based on LLVM 9.0.8svn)
+Target: aarch64-unknown-linux-android21
+Thread model: posix
+InstalledDir: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin
+Found candidate GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" -pie -z noexecstack -export-dynamic -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=both --enable-new-dtags --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /system/bin/linker64 -o cmTC_72a50 /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include]
+    add: [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include]
+    add: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android]
+    add: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include]
+  end of search list found
+  collapse include dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/local/include]
+  collapse include dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include]
+  collapse include dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include/aarch64-linux-android]
+  collapse include dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include]
+  implicit include dirs: [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/local/include;/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include/aarch64-linux-android;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-linux-android-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_72a50/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_72a50.dir/build.make CMakeFiles/cmTC_72a50.dir/build]
+  ignore line: [Building C object CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-gcc   -v -o CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o   -c /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCCompilerABI.c]
+  ignore line: [Android (6317467 based on r365631c1) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project e0caee08e5f09b374a27a676d04978c81fcb1928) (based on LLVM 9.0.8svn)]
+  ignore line: [Target: aarch64-unknown-linux-android21]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin]
+  ignore line: [Found candidate GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/clang90" -cc1 -triple aarch64-unknown-linux-android21 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debugger-tuning=gdb -target-linker-version 409.12 -v -coverage-notes-file /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.gcno -resource-dir /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8 -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/include -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include -fdebug-compilation-dir /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fdiagnostics-show-option -o CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o -x c /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 9.0.8 based upon LLVM 9.0.8svn default target x86_64-apple-darwin18.5.0]
+  ignore line: [ignoring nonexistent directory "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include]
+  ignore line: [ /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include]
+  ignore line: [ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android]
+  ignore line: [ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking C executable cmTC_72a50]
+  ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72a50.dir/link.txt --verbose=1]
+  ignore line: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-gcc     -v -rdynamic CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o  -o cmTC_72a50 ]
+  ignore line: [Android (6317467 based on r365631c1) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project e0caee08e5f09b374a27a676d04978c81fcb1928) (based on LLVM 9.0.8svn)]
+  ignore line: [Target: aarch64-unknown-linux-android21]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin]
+  ignore line: [Found candidate GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" -pie -z noexecstack -export-dynamic -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=both --enable-new-dtags --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /system/bin/linker64 -o cmTC_72a50 /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
+    arg [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-EL] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [--warn-shared-textrel] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-zmax-page-size=4096] ==> ignore
+    arg [--hash-style=both] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [aarch64linux] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_72a50] ==> ignore
+    arg [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib]
+    arg [CMakeFiles/cmTC_72a50.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o] ==> ignore
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/aarch64-linux-android/lib64]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib/aarch64-linux-android/21]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib/aarch64-linux-android]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/aarch64-linux-android/lib]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib]
+  implicit libs: [gcc;dl;c;gcc;dl]
+  implicit dirs: [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64;/Users/adimaggio2021/Downloads/test222/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x;/Users/adimaggio2021/Downloads/test222/android-toolchain/aarch64-linux-android/lib64;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib/aarch64-linux-android/21;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib/aarch64-linux-android;/Users/adimaggio2021/Downloads/test222/android-toolchain/aarch64-linux-android/lib;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a9a7a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a9a7a.dir/build.make CMakeFiles/cmTC_a9a7a.dir/build
+Building CXX object CMakeFiles/cmTC_a9a7a.dir/testCXXCompiler.cxx.o
+/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-g++     -o CMakeFiles/cmTC_a9a7a.dir/testCXXCompiler.cxx.o -c /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_a9a7a
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a9a7a.dir/link.txt --verbose=1
+/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-g++       -rdynamic CMakeFiles/cmTC_a9a7a.dir/testCXXCompiler.cxx.o  -o cmTC_a9a7a 
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_3a87a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3a87a.dir/build.make CMakeFiles/cmTC_3a87a.dir/build
+Building CXX object CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o
+/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-g++    -v -o CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp
+Android (6317467 based on r365631c1) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project e0caee08e5f09b374a27a676d04978c81fcb1928) (based on LLVM 9.0.8svn)
+Target: aarch64-unknown-linux-android21
+Thread model: posix
+InstalledDir: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin
+Found candidate GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/clang90++" -cc1 -triple aarch64-unknown-linux-android21 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debugger-tuning=gdb -target-linker-version 409.12 -v -coverage-notes-file /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8 -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/c++/v1 -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/include -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include -fdeprecated-macro -fdebug-compilation-dir /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 9.0.8 based upon LLVM 9.0.8svn default target x86_64-apple-darwin18.5.0
+ignoring nonexistent directory "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/c++/v1
+ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include
+ /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include
+ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android
+ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include
+End of search list.
+Linking CXX executable cmTC_3a87a
+/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a87a.dir/link.txt --verbose=1
+/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-g++      -v -rdynamic CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3a87a 
+Android (6317467 based on r365631c1) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project e0caee08e5f09b374a27a676d04978c81fcb1928) (based on LLVM 9.0.8svn)
+Target: aarch64-unknown-linux-android21
+Thread model: posix
+InstalledDir: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin
+Found candidate GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" -pie -z noexecstack -export-dynamic -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=both --enable-new-dtags --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /system/bin/linker64 -o cmTC_3a87a /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc -ldl -lc -lgcc -ldl /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/c++/v1]
+    add: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include]
+    add: [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include]
+    add: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android]
+    add: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include]
+  end of search list found
+  collapse include dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/c++/v1] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include/c++/v1]
+  collapse include dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/local/include]
+  collapse include dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include]
+  collapse include dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include/aarch64-linux-android]
+  collapse include dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include]
+  implicit include dirs: [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include/c++/v1;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/local/include;/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include/aarch64-linux-android;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(aarch64-linux-android-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/make cmTC_3a87a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3a87a.dir/build.make CMakeFiles/cmTC_3a87a.dir/build]
+  ignore line: [Building CXX object CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-g++    -v -o CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o -c /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Android (6317467 based on r365631c1) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project e0caee08e5f09b374a27a676d04978c81fcb1928) (based on LLVM 9.0.8svn)]
+  ignore line: [Target: aarch64-unknown-linux-android21]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin]
+  ignore line: [Found candidate GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [ "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/clang90++" -cc1 -triple aarch64-unknown-linux-android21 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debugger-tuning=gdb -target-linker-version 409.12 -v -coverage-notes-file /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8 -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/c++/v1 -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include -internal-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/include -internal-externc-isystem /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include -fdeprecated-macro -fdebug-compilation-dir /Users/adimaggio2021/Downloads/test222/openmm-master/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fno-signed-char -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o -x c++ /Applications/CMake.app/Contents/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 9.0.8 based upon LLVM 9.0.8svn default target x86_64-apple-darwin18.5.0]
+  ignore line: [ignoring nonexistent directory "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/c++/v1]
+  ignore line: [ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/local/include]
+  ignore line: [ /Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/include]
+  ignore line: [ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include/aarch64-linux-android]
+  ignore line: [ /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [Linking CXX executable cmTC_3a87a]
+  ignore line: [/Applications/CMake.app/Contents/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a87a.dir/link.txt --verbose=1]
+  ignore line: [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-g++      -v -rdynamic CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_3a87a ]
+  ignore line: [Android (6317467 based on r365631c1) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project e0caee08e5f09b374a27a676d04978c81fcb1928) (based on LLVM 9.0.8svn)]
+  ignore line: [Target: aarch64-unknown-linux-android21]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin]
+  ignore line: [Found candidate GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  link line: [ "/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" -pie -z noexecstack -export-dynamic -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=both --enable-new-dtags --eh-frame-hdr -m aarch64linux -export-dynamic -dynamic-linker /system/bin/linker64 -o cmTC_3a87a /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o -L/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21 -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lm -lgcc -ldl -lc -lgcc -ldl /Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o]
+    arg [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-EL] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [--warn-shared-textrel] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-zmax-page-size=4096] ==> ignore
+    arg [--hash-style=both] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [aarch64linux] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_3a87a] ==> ignore
+    arg [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
+    arg [-L/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib] ==> dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib]
+    arg [CMakeFiles/cmTC_3a87a.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
+    arg [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21/crtend_android.o] ==> ignore
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/aarch64-linux-android/lib64]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android/21] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib/aarch64-linux-android/21]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib/aarch64-linux-android] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib/aarch64-linux-android]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/aarch64-linux-android/lib]
+  collapse library dir [/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/../sysroot/usr/lib] ==> [/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib]
+  implicit libs: [c++;m;gcc;dl;c;gcc;dl]
+  implicit dirs: [/Users/adimaggio2021/Downloads/test222/android-toolchain/lib64/clang/9.0.8/lib/linux/aarch64;/Users/adimaggio2021/Downloads/test222/android-toolchain/lib/gcc/aarch64-linux-android/4.9.x;/Users/adimaggio2021/Downloads/test222/android-toolchain/aarch64-linux-android/lib64;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib/aarch64-linux-android/21;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib/aarch64-linux-android;/Users/adimaggio2021/Downloads/test222/android-toolchain/aarch64-linux-android/lib;/Users/adimaggio2021/Downloads/test222/android-toolchain/sysroot/usr/lib]
+  implicit fwks: []
+
+
