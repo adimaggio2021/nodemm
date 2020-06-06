@@ -104,7 +104,7 @@ void doSimulateFromXmlAfterAsync(uv_work_t* request, int status) {
 
     cout << "Cleaning up..." << endl;
     //Cleanup functions
-    map<string,CopyablePersistentTraits<Function>::CopyablePersistent>::iterator iter = event_callbacks.begin()
+    map<string, Nan::CopyablePersistentTraits<Function>::CopyablePersistent>::iterator iter = event_callbacks.begin()
     for (; iter!= event_callbacks.end(); ++iter ) {
         if (!iter->second.IsEmpty()) {
             iter->second.Reset();
@@ -174,11 +174,11 @@ void SimulateFromXml(const Nan::FunctionCallbackInfo<Value>& args) {
     baton = new WorkerThreadBaton();
     baton->request.data = baton;
     baton->event_callbacks = &event_callbacks;
-    baton->options = new string(*Nan::Utf8String(v8::Value::ToString(args[0])));
+    baton->options = new string(*Nan::Utf8String(v8::Value::ToString(v8::Value::args[0])));
     baton->files = new map<string, string>();
 
-    Local<Object> files = v8::Value::ToObject(args[1].ToLocalChecked());
-    Local<Array> props = GetPropertyNames(files);
+    Local<Object> files = v8::Value::ToObject(v8::Value::args[1]);
+    Local<Array> props = GetPropertyNames(files.ToLocalChecked());
     for(int i = 0; i < props->Length(); i++) {
         if (props->Get(i)->IsString()) {
             Local<String> key = v8::Value::ToString(props->Get(i));
@@ -218,7 +218,7 @@ void RegisterEvent(const Nan::FunctionCallbackInfo<Value>& args) {
         return;
     }
 
-    string eventName = *Nan::Utf8String(v8::Value::ToString(args[0]));
+    string eventName = *Nan::Utf8String(v8::Value::ToString(v8::Value::args[0]));
 
     if (event_callbacks.find(eventName) != event_callbacks.end()) {
         event_callbacks[eventName].Reset();
