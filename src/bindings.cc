@@ -49,7 +49,7 @@ static uv_async_t async_task;
  * A map containing all the event listeners registered on RegisterEvent function.
  * These functions are called when its corresponding event is emitted.
  */
-static map<string, CopyablePersistentTraits<Function>::CopyablePersistent> event_callbacks;
+static map<string, Nan::CopyablePersistentTraits<Function>::CopyablePersistent> event_callbacks;
 
 /**
  * The OpenMMCore. This object is used to perform simulations.
@@ -104,9 +104,10 @@ void doSimulateFromXmlAfterAsync(uv_work_t* request, int status) {
 
     cout << "Cleaning up..." << endl;
     //Cleanup functions
-    for ( map<string,CopyablePersistentTraits<Function>::CopyablePersistent >::iterator it = event_callbacks.begin(); it!= event_callbacks.end(); ++it ) {
-        if (!it->second.IsEmpty()) {
-            it->second.Reset();
+    map<string,CopyablePersistentTraits<Function>::CopyablePersistent>::iterator iter = event_callbacks.begin()
+    for (; iter!= event_callbacks.end(); ++iter ) {
+        if (!iter->second.IsEmpty()) {
+            iter->second.Reset();
         }
     }
     event_callbacks.clear();
@@ -176,7 +177,7 @@ void SimulateFromXml(const Nan::FunctionCallbackInfo<Value>& args) {
     baton->options = new string(*Nan::Utf8String(v8::Value::ToString(args[0])));
     baton->files = new map<string, string>();
 
-    Local<Object> files = v8::Value::ToObject(args[1]);
+    Local<Object> files = v8::Value::ToObject(args[1].ToLocalChecked());
     Local<Array> props = GetPropertyNames(files);
     for(int i = 0; i < props->Length(); i++) {
         if (props->Get(i)->IsString()) {
