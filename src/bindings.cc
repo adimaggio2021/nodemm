@@ -314,6 +314,6 @@ void initOpenMM(Local<Object> exports,
         Nan::New<FunctionTemplate>(GetVersionName)->GetFunction());
 }
 
-NODE_MODULE_CONTEXT_AWARE_BUILTIN(openmm_native, initOpenMM)
+#define NODE_MODULE_CONTEXT_AWARE_BUILTIN(openmm_native, initOpenMM)
 
 #endif /* BINDINGS_CC */
