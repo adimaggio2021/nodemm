@@ -11,7 +11,7 @@
 #include <node_buffer.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <openmm/serialization/XmlSerializer.h>
+#include <openmm/serialization/include/openmm/serialization/XmlSerializer.h>
 #include <node_object_wrap.h>
 #include <istream>
 #include <cstdio>

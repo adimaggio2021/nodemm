@@ -13,7 +13,7 @@
 #include <node.h>
 #include <v8.h>
 #include <node_buffer.h>
-#include "openmm/serialization/XmlSerializer.h"
+#include "openmm/serialization/include/openmm/serialization/XmlSerializer.h"
 
 using namespace v8;
 using namespace node;
