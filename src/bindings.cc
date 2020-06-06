@@ -297,22 +297,22 @@ void initOpenMM(Local<Object> exports,
               void* priv) {
     Nan::Set(exports,
         Nan::New<String>("simulateFromXml").ToLocalChecked(),
-        Nan::GetFunction(Nan::New<FunctionTemplate>(SimulateFromXml));
+        Nan::GetFunction(Nan::New<FunctionTemplate>(SimulateFromXml)));
     Nan::Set(exports,
         Nan::New<String>("on").ToLocalChecked(),
-        Nan::GetFunction(Nan::New<FunctionTemplate>(RegisterEvent));
+        Nan::GetFunction(Nan::New<FunctionTemplate>(RegisterEvent)));
     Nan::Set(exports,
         Nan::New<String>("continue").ToLocalChecked(),
-        Nan::GetFunction(Nan::New<FunctionTemplate>(Continue));
+        Nan::GetFunction(Nan::New<FunctionTemplate>(Continue)));
     Nan::Set(exports,
         Nan::New<String>("pause").ToLocalChecked(),
-        Nan::GetFunction(Nan::New<FunctionTemplate>(Pause));
+        Nan::GetFunction(Nan::New<FunctionTemplate>(Pause)));
     Nan::Set(exports,
         Nan::New<String>("stop").ToLocalChecked(),
-        Nan::GetFunction(Nan::New<FunctionTemplate>(Stop));
+        Nan::GetFunction(Nan::New<FunctionTemplate>(Stop)));
     Nan::Set(exports,
         Nan::New<String>("getVersionName").ToLocalChecked(),
-        Nan::GetFunction(Nan::New<FunctionTemplate>(GetVersionName));
+        Nan::GetFunction(Nan::New<FunctionTemplate>(GetVersionName)));
 }
 
 #define NODE_MODULE_CONTEXT_AWARE_BUILTIN(openmm_native, initOpenMM)
