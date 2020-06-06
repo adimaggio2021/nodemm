@@ -1,5 +1,5 @@
-#ifndef OPENMM_H_
-#define OPENMM_H_
+#ifndef OPENMM_LOCALENERGYMINIMIZER_H_
+#define OPENMM_LOCALENERGYMINIMIZER_H_
 
 /* -------------------------------------------------------------------------- *
  *                                   OpenMM                                   *
@@ -9,7 +9,7 @@
  * Biological Structures at Stanford, funded under the NIH Roadmap for        *
  * Medical Research, grant U54 GM072970. See https://simtk.org.               *
  *                                                                            *
- * Portions copyright (c) 2009-2017 Stanford University and the Authors.      *
+ * Portions copyright (c) 2010 Stanford University and the Authors.           *
  * Authors: Peter Eastman                                                     *
  * Contributors:                                                              *
  *                                                                            *
@@ -32,53 +32,40 @@
  * USE OR OTHER DEALINGS IN THE SOFTWARE.                                     *
  * -------------------------------------------------------------------------- */
 
-#include "openmm/AndersenThermostat.h"
-#include "openmm/BrownianIntegrator.h"
-#include "openmm/CMAPTorsionForce.h"
-#include "openmm/CMMotionRemover.h"
-#include "openmm/CompoundIntegrator.h"
-#include "openmm/CustomBondForce.h"
-#include "openmm/CustomCentroidBondForce.h"
-#include "openmm/CustomCompoundBondForce.h"
-#include "openmm/CustomAngleForce.h"
-#include "openmm/CustomTorsionForce.h"
-#include "openmm/CustomExternalForce.h"
-#include "openmm/CustomCVForce.h"
-#include "openmm/CustomGBForce.h"
-#include "openmm/CustomHbondForce.h"
-#include "openmm/CustomIntegrator.h"
-#include "openmm/CustomManyParticleForce.h"
-#include "openmm/CustomNonbondedForce.h"
-#include "openmm/Force.h"
-#include "openmm/GayBerneForce.h"
-#include "openmm/GBSAOBCForce.h"
-#include "openmm/HarmonicAngleForce.h"
-#include "openmm/HarmonicBondForce.h"
-#include "openmm/Integrator.h"
-#include "openmm/LangevinIntegrator.h"
-#include "openmm/LangevinMiddleIntegrator.h"
-#include "openmm/LocalEnergyMinimizer.h"
-#include "openmm/MonteCarloAnisotropicBarostat.h"
-#include "openmm/MonteCarloBarostat.h"
-#include "openmm/MonteCarloMembraneBarostat.h"
-#include "openmm/NonbondedForce.h"
-#include "openmm/Context.h"
-#include "openmm/OpenMMException.h"
-#include "openmm/PeriodicTorsionForce.h"
-#include "openmm/RBTorsionForce.h"
-#include "openmm/RMSDForce.h"
-#include "openmm/State.h"
-#include "openmm/System.h"
-#include "openmm/TabulatedFunction.h"
-#include "openmm/Units.h"
-#include "openmm/VariableLangevinIntegrator.h"
-#include "openmm/VariableVerletIntegrator.h"
-#include "openmm/Vec3.h"
-#include "openmm/VerletIntegrator.h"
-#include "openmm/NoseHooverIntegrator.h"
-#include "openmm/NoseHooverChain.h"
-#include "openmm/VirtualSite.h"
-#include "openmm/Platform.h"
-#include "openmm/serialization/XmlSerializer.h"
+#include "Context.h"
 
-#endif /*OPENMM_H_*/
+namespace OpenMM {
+
+/**
+ * Given a Context, this class searches for a new set of particle positions that represent
+ * a local minimum of the potential energy.  The search is performed with the L-BFGS algorithm.
+ * Distance constraints are enforced during minimization by adding a harmonic restraining
+ * force to the potential function.  The strength of the restraining force is steadily increased
+ * until the minimum energy configuration satisfies all constraints to within the tolerance
+ * specified by the Context's Integrator.
+ * 
+ * Energy minimization is done using the force groups defined by the Integrator.
+ * If you have called setIntegrationForceGroups() on it to restrict the set of forces
+ * used for integration, only the energy of the included forces will be minimized.
+ */
+
+class OPENMM_EXPORT LocalEnergyMinimizer {
+public:
+    /**
+     * Search for a new set of particle positions that represent a local potential energy minimum.
+     * On exit, the Context will have been updated with the new positions.
+     *
+     * @param context        a Context specifying the System to minimize and the initial particle positions
+     * @param tolerance      this specifies how precisely the energy minimum must be located.  Minimization
+     *                       will be halted once the root-mean-square value of all force components reaches
+     *                       this tolerance.  The default value is 10.
+     * @param maxIterations  the maximum number of iterations to perform.  If this is 0, minimation is continued
+     *                       until the results converge without regard to how many iterations it takes.  The
+     *                       default value is 0.
+     */
+    static void minimize(Context& context, double tolerance = 10, int maxIterations = 0);
+};
+
+} // namespace OpenMM
+
+#endif /*OPENMM_LOCALENERGYMINIMIZER_H_*/

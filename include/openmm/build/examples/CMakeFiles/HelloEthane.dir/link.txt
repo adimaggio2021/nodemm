@@ -1,1 +1,0 @@
-/Users/adimaggio2021/Downloads/test222/android-toolchain/bin/aarch64-linux-android-g++  -march=armv8-a -funsafe-math-optimizations -O3 -DNDEBUG  -rdynamic CMakeFiles/HelloEthane.dir/HelloEthane.cpp.o  -o ../HelloEthane  -Wl,-rpath,/Users/adimaggio2021/Downloads/test222/openmm-master/build ../libOpenMM.so -lcpufeatures 
