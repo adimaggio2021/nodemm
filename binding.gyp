@@ -38,7 +38,7 @@
         }],
         ['OS=="linux"', {
           'defines': ['x86'],
-          'link_settings' : {'libraries': ['-lOpenMM','-lOpenMMCPU','-lOpenMMDrude','-lOpenMMRPMD']}
+          'libraries': ['-L/home/ec2-user/nodejs/deps/openmm/libraries/linux','-L/home/ec2-user/nodejs/deps/openmm/libraries/linux/plugins']}
         }],
         ['OS=="mac"', {
           'defines': ['x86'],
