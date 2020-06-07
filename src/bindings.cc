@@ -180,9 +180,9 @@ void SimulateFromXml(const Nan::FunctionCallbackInfo<Value>& args) {
     Local<Object> files = args[1]->ToObject(Nan::GetCurrentContext()).FromMaybe(v8::Local<v8::Object>());
     Local<Array> props = files->GetPropertyNames(Nan::GetCurrentContext()).ToLocalChecked();
     for(int i = 0; i < props->Length(); i++) {
-        if (IsString(Get(props, i))) {
+        if ( props->Get(Nan::GetCurrentContext(), i).FromMaybe(v8::Local<v8::Value>())->IsString()) {
             Local<String> key = props->Get(Nan::GetCurrentContext(), i).FromMaybe(v8::Local<v8::Value>())->ToString(Nan::GetCurrentContext()).FromMaybe(v8::Local<v8::String>());
-            if (IsString(Get(files, key))) {
+            if (files->Get(Nan::GetCurrentContext(), key).FromMaybe(v8::Local<v8::Value>())->IsString()) {
                 Nan::Utf8String val(files->Get(Nan::GetCurrentContext(), key).FromMaybe(v8::Local<v8::Value>())->ToString(Nan::GetCurrentContext()).FromMaybe(v8::Local<v8::String>()));
                 (*(baton->files))[string(*Nan::Utf8String(key))] = string(*val);
             }
