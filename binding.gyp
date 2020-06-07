@@ -38,7 +38,7 @@
         }],
         ['OS=="linux"', {
           'defines': ['x86'],
-          'libraries': ['-L/home/ec2-user/nodejs/deps/openmm/libraries/linux','-L/home/ec2-user/nodejs/deps/openmm/libraries/linux/plugins']}
+          'libraries': ['-L/home/ec2-user/nodejs/deps/openmm/libraries/linux','-L/home/ec2-user/nodejs/deps/openmm/libraries/linux/plugins']
         }],
         ['OS=="mac"', {
           'defines': ['x86'],
