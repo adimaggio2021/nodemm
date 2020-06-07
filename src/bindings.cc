@@ -104,7 +104,7 @@ void doSimulateFromXmlAfterAsync(uv_work_t* request, int status) {
 
     cout << "Cleaning up..." << endl;
     //Cleanup functions
-    map<string, Nan::CopyablePersistentTraits<Function>::CopyablePersistent>::iterator iter = event_callbacks.begin()
+    std::map<string, Nan::CopyablePersistentTraits<Function>::CopyablePersistent>::iterator iter = event_callbacks.begin();
     for (; iter!= event_callbacks.end(); ++iter ) {
         if (!iter->second.IsEmpty()) {
             iter->second.Reset();
