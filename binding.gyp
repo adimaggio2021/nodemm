@@ -15,8 +15,9 @@
         './include',
         './src',
         '../nan',
-        '/Users/adimaggio2021/Downloads/nodejs-mobile-v0.3.1-android/include/node',
-        '/Users/adimaggio2021/Downloads/nodejs-mobile-v0.3.1-android/include/node/uv'
+        '../../src',
+        '../../deps/uv/include',
+        '../../deps/v8/include'
       ],
       'cflags_cc': ['-frtti', '-fexceptions' ],
       'xcode_settings': {
@@ -40,13 +41,15 @@
           'libraries': ['-L/home/ec2-user/nodejs/deps/openmm/libraries/linux','-L/home/ec2-user/nodejs/deps/openmm/libraries/linux/plugins']
         }],
         ['OS=="mac"', {
-          'defines': ['ARM'],
-          'libraries': [
-              '-L${PWD}/libraries/android',
-              '-L${PWD}/libraries/android/plugins'
-            ]
+          'defines': ['x86'],
+          'link_settings' : {'libraries': [
+              '${PWD}/deps/openmm/libraries/<(OS)/libOpenMM.dylib',
+              '${PWD}/deps/openmm/libraries/<(OS)/plugins/libOpenMMCPU.dylib',
+              '${PWD}/deps/openmm/libraries/<(OS)/libOpenMMDrude.dylib',
+              '${PWD}/deps/openmm/libraries/<(OS)/libOpenMMRPMD.dylib'
+            ]}
         }],
-		['OS=="win"', {
+    ['OS=="win"', {
           'defines': ['x86', 'OPENMM_USE_STATIC_LIBRARIES'],
           'link_settings' : {'libraries': [
               '-l<!(echo %cd%)/libraries/<(OS)/OpenMM.lib',
