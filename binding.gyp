@@ -15,9 +15,8 @@
         './include',
         './src',
         '../nan',
-        '../../src',
-        '../../deps/uv/include',
-        '../../deps/v8/include'
+        '/Users/adimaggio2021/Downloads/nodejs-mobile-v0.3.1-android/include/node',
+        '/Users/adimaggio2021/Downloads/nodejs-mobile-v0.3.1-android/include/node/uv'
       ],
       'cflags_cc': ['-frtti', '-fexceptions' ],
       'xcode_settings': {
