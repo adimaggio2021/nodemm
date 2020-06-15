@@ -43,7 +43,7 @@
         ['OS=="mac"', {
           'defines': ['x86'],
           'link_settings' : {'libraries': [
-              '${PWD}libraries/<(OS)/libOpenMM.dylib',
+              '${PWD}/libraries/<(OS)/libOpenMM.dylib',
               '${PWD}/libraries/<(OS)/plugins/libOpenMMCPU.dylib',
               '${PWD}/libraries/<(OS)/libOpenMMDrude.dylib',
               '${PWD}/libraries/<(OS)/libOpenMMRPMD.dylib'
