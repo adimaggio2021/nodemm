@@ -34,7 +34,7 @@
       'conditions': [
         ['OS=="android"', {
           'defines': ['ARM'],
-          'link_settings' : {'libraries': ['-lOpenMM','-lOpenMMCPU','-lOpenMMDrude','-lOpenMMRPMD']}
+          'libraries': ['-L${PWD}/lib','-L${PWD}/lib/plugins']
         }],
         ['OS=="linux"', {
           'defines': ['ARM'],
