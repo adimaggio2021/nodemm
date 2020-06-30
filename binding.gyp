@@ -28,8 +28,8 @@
       },
       'link_settings': {
         'ldflags': [
-          '-L${PWD}/deps/openmm/libraries/<(OS)',
-          '-L${PWD}/deps/openmm/libraries/<(OS)/plugins'
+          '-L${PWD}/libraries/android',
+          '-L${PWD}/libraries/android/plugins'
         ]},
       'conditions': [
         ['OS=="android"', {
@@ -37,8 +37,8 @@
           'link_settings' : {'libraries': ['-lOpenMM','-lOpenMMCPU','-lOpenMMDrude','-lOpenMMRPMD']}
         }],
         ['OS=="linux"', {
-          'defines': ['x86'],
-          'libraries': ['-L/home/ec2-user/nodejs/deps/openmm/libraries/linux','-L/home/ec2-user/nodejs/deps/openmm/libraries/linux/plugins']
+          'defines': ['ARM'],
+          'libraries': ['-L${PWD}/lib','-L${PWD}/lib/plugins']
         }],
         ['OS=="mac"', {
           'defines': ['x86'],
